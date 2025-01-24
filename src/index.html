@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="bg-white relative w-full z-20 top-0 start-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./images/1.png" class="h-8" alt="Flowbite Logo">
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" id="darkLightMode" class="ps-7 pe-7 text-black dark:text-white bg-slate-200 hover:bg-slate-400 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-slate-900 dark:hover:bg-slate-700 border-slate-300 hover:border-slate-400 dark:border-slate-900 dark:hover:border-slate-00 border-spacing-1">Dark mode</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  ">
+            <li>
+            <a href="#home" id="homeBtn" class="block py-2 px-3 rounded md:bg-transparent md:p-0 text-blue-700 dark:text-blue-700" aria-current="page">Home</a>
+            </li>
+            <li>
+            <a href="#about" id="aboutBtn" class="block py-2 px-3 text-gray-900 dark:text-gray-800 dark:hover:text-gray-700 rounded md:hover:bg-transparent md:p-0  ">About</a>
+            </li>
+            <li>
+            <a href="#contact" id="contactBtn" class="block py-2 px-3 text-gray-900 dark:text-gray-800 dark:hover:text-gray-700 rounded md:p-0">Contact</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section id="home" class="block">
+        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="home image">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="home image">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="home image">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="home image">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="./images/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="home image">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+        <div class=" p-9 dark:bg-[#030712] border border-gray-200">
+            <div class="dark:text-white">
+                <h2 class="text-center text-5xl mt-7">Tools</h2>
+                <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur !</p>
+            </div>
+            <div class="container mt-6 grid md:grid-cols-3 gap-y-7">               
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-anchor-circle-exclamation"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+                
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-square-h"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+                
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-jar-wheat"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+                
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+                
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-icicles"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+                
+                <div class="p-6 relative bg-white border-2 border-black rounded">
+                    <div class="absolute top-0 right-1/2 -translate-y-1/2 rounded-full bg-red-200 flex justify-center items-center w-10 h-10">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-center text-2xl">Product</h3>
+                    <div class="m-auto w-8 h-[1.5px] bg-black mt-[6px]"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="hidden dark:bg-[#030712]">
+        <div class="container grid lg:grid-cols-3 md:grid-cols-2">
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-2.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-3.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-4.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-5.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container p-5">
+                <div class="m-auto h-full w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="./images/a-6.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Card 1</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700">
+                            this is the first card.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="hidden dark:bg-[#030712] p-9">
+        <div>
+            <h1 class="text-4xl text-center text-black dark:text-white">Contact us</h1>
+            <p class="text-center mt-4 mb-4 text-black dark:text-gray-400">We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+        <!-- component -->
+        <div class="lg:w-1/2 md:w-2/3 m-auto rounded flex items-center justify-center p-8 bg-white">
+            <!-- Author: FormBold Team -->
+            <!-- Learn More: https://formbold.com -->
+            <div class="mx-auto w-full">
+                <form action="" method="POST">
+                    <div class="mb-5">
+                    <label
+                        for="name"
+                        class="mb-3 block text-base font-medium text-[#07074D]"
+                    >
+                        Full Name
+                    </label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Full Name"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                    </div>
+                    <div class="mb-5">
+                    <label
+                        for="email"
+                        class="mb-3 block text-base font-medium text-[#07074D]"
+                    >
+                        Email Address
+                    </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="example@domain.com"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                    </div>
+                    <div class="mb-5">
+                    <label
+                        for="message"
+                        class="mb-3 block text-base font-medium text-[#07074D]"
+                    >
+                        Message
+                    </label>
+                    <textarea
+                        rows="4"
+                        name="message"
+                        id="message"
+                        placeholder="Type your message"
+                        class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    ></textarea>
+                    </div>
+                    <div class="flex justify-center items-center">
+                    <button
+                        class="hover:shadow-form rounded-md bg-[#057a55] py-3 px-8 text-base font-semibold text-white outline-none hover:-translate-y-1 transition-transform duration-300"
+                    >
+                        Send Message
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="w-full flex justify-between items-center p-10 bg-[#212529]">
+        <div class="w-1/5">
+            <a href=""><img src="./images/7.png" alt="apple store Logo"></a>
+        </div>
+        <div class="flex w-[10%] justify-between text-white">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
